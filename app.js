@@ -45,7 +45,7 @@ app.get('/start', (req, res) => {
 });
 
 app.get('/end', (req, res) => {
-	exec('python dorcas/project.py ' + req.query.id, (err, stdout, stderr) => {
+	exec('python dorcas/project.py ' + req.query.id + ' ' + req.query.no, (err, stdout, stderr) => {
 		if (err) {
 			console.log("Couldn't execute");
 			res.json({errpr: true, message: 'Failed to execute command.'});
