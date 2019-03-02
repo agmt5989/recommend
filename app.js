@@ -11,7 +11,7 @@ app.use(bp.urlencoded({
 }));
 
 app.get('/', (req, res) => {
-	res.json({message: 'Well, we seem to have made it!'});
+//	res.json({message: 'Well, we seem to have made it!'});
 });
 
 app.get('/start', (req, res) => {
