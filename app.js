@@ -17,6 +17,7 @@ app.engine('handlebars', hbs({
 }));
 
 app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
 //	res.json({message: 'Well, we seem to have made it!'});
