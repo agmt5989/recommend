@@ -13,6 +13,7 @@ app.use(bp.urlencoded({
 
 app.engine('handlebars', hbs({
 	defaultLayout: 'main',
+	layoutsDir: __dirname + '/views/layouts/'
 }));
 
 app.get('/', (req, res) => {
