@@ -11,6 +11,8 @@ app.use(bp.urlencoded({
 	extended: false,
 }));
 
+app.engine('handlebars', hbs());
+
 app.get('/', (req, res) => {
 //	res.json({message: 'Well, we seem to have made it!'});
 	res.render('index');
