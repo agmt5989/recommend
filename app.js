@@ -16,6 +16,8 @@ app.engine('handlebars', hbs({
 	layoutsDir: __dirname + '/views/layouts/'
 }));
 
+app.set('views', path.join(__dirname, 'views'));
+
 app.get('/', (req, res) => {
 //	res.json({message: 'Well, we seem to have made it!'});
 	res.render('index');
