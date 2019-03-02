@@ -4,6 +4,7 @@ const express = require('express');
 const bp = require('body-parser');
 const exec = require('child_process').exec;
 const app = express();
+const hbs = require('express-handlebars');
 
 app.use(bp.json());
 app.use(bp.urlencoded({
