@@ -26,7 +26,7 @@ def recommend(user_id, recommendation_no):
     real_values = real_values.to_json(orient='records')
 
     to_send = {'reco': recommendations, 'real': real_values}
-    return to_send
+    return to_send.to_json()
 
 
 def run():
