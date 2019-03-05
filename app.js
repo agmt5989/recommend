@@ -53,7 +53,9 @@ app.get('/end', (req, res) => {
 			// the *entire* stdout and stderr (buffered)
 			let resArray = stdout.split('\n');
 			let result = resArray[2];
+			result = JSON.parse(result);
 			console.log(result);
+//			console.log(`stdout: ${resArray}`);
 			res.json(result);
 		} else {
 			console.log(`stderr: ${stderr}`);
