@@ -25,7 +25,7 @@ def recommend(user_id, recommendation_no):
     real_values = real_values.reset_index(drop = True)
     real_values = real_values.to_json(orient='records')
 
-    return recommendations
+    return "GTFO!"
 
 
 def run():

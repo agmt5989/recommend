@@ -45,14 +45,16 @@ app.get('/start', (req, res) => {
 });
 
 app.get('/end', (req, res) => {
-	exec('python dorcas/project.py ' + req.query.id + ' ' + req.query.no, (err, stdout, stderr) => {
+	exec('python project.py ' + req.query.id + ' ' + req.query.no, (err, stdout, stderr) => {
 		if (err) {
 			console.log("Couldn't execute");
 			res.json({errpr: true, message: 'Failed to execute command.'});
 		} else if (stdout) {
 			// the *entire* stdout and stderr (buffered)
-			console.log(`stdout: ${stdout}`);
-			res.json({response: stdout});
+			let resArray = stdout.split('\n');
+			let result = resArray[2];
+			console.log(result);
+			res.json(result);
 		} else {
 			console.log(`stderr: ${stderr}`);
 			res.json({response: stderr});
