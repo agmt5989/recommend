@@ -16,18 +16,17 @@ def recommend(user_id, recommendation_no):
     recommendations = pd.merge(recommendations, description, on='StockCode')
     recommendations.drop_duplicates('StockCode', inplace=True)
     recommendations = recommendations.reset_index(drop = True)
-    recommendations = recommendations.to_json(orient='records')
+    recommendations = recommendations.to_dict(orient='records')
 
     test_subset = pd.read_csv('test_subset.csv')
     real_values = test_subset[test_subset['CustomerID']==user_id]
     real_values = pd.merge(real_values, description, on='StockCode')
     real_values.drop_duplicates('StockCode', inplace=True)
     real_values = real_values.reset_index(drop = True)
-    real_values = real_values.to_json(orient='records')
+    real_values = real_values.to_dict(orient='records')
 
-    #to_send = {'reco': recommendations, 'real': real_values}
-    #return to_send.to_json()
-    return (real_values, recommendations)
+    to_send = {'reco': recommendations, 'real': real_values}
+    return json.dumps(to_send)
 
 
 def run():
