@@ -53,7 +53,7 @@ app.get('/end', (req, res) => {
 			// the *entire* stdout and stderr (buffered)
 			let resArray = stdout.split('\n');
 			let result = resArray[2];
-			let bulk = result.split("]', '[");
+			let bulk = result.replace(/[()]/g,'').split("]', '[");
 			result = "real: " + bulk[0] + "]', recommend: '[" + bulk[1];
 //			result = JSON.parse(result);
 			console.log(result);
