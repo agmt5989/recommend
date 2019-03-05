@@ -44,6 +44,10 @@ app.get('/start', (req, res) => {
 	});
 });
 
+app.get('/reco', (req, res) => {
+	res.render('reco');
+});
+
 app.get('/end', (req, res) => {
 	exec('python project.py ' + req.query.id + ' ' + req.query.no, (err, stdout, stderr) => {
 		if (err) {
