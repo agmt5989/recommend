@@ -59,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="47" />
+            <state relative-caret-position="92">
+              <caret line="389" column="52" lean-forward="true" selection-start-line="389" selection-start-column="52" selection-end-line="389" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -68,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/eng.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+            <state relative-caret-position="552">
+              <caret line="345" column="91" selection-start-line="345" selection-start-column="91" selection-end-line="345" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -172,12 +172,12 @@
       <workItem from="1550511985207" duration="44000" />
       <workItem from="1550512064301" duration="3342000" />
       <workItem from="1551516785194" duration="28439000" />
-      <workItem from="1553170916010" duration="1536000" />
+      <workItem from="1553170916010" duration="1958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33361000" />
+    <option name="totallyTimeSpent" value="33783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -255,15 +255,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="47" />
+        <state relative-caret-position="92">
+          <caret line="389" column="52" lean-forward="true" selection-start-line="389" selection-start-column="52" selection-end-line="389" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/eng.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+        <state relative-caret-position="552">
+          <caret line="345" column="91" selection-start-line="345" selection-start-column="91" selection-end-line="345" selection-end-column="91" />
         </state>
       </provider>
     </entry>
