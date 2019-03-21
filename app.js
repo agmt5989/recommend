@@ -27,6 +27,11 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
+app.get('/engine', (req, res) => {
+//	res.json({message: 'Well, we seem to have made it!'});
+	res.render('eng');
+});
+
 app.get('/start', (req, res) => {
 	exec('python app.py ' + req.query.id, (err, stdout, stderr) => {
 		if (err) {
