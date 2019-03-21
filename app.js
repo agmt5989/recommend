@@ -36,7 +36,7 @@ app.get('/start', (req, res) => {
 	exec('python app.py ' + req.query.id, (err, stdout, stderr) => {
 		if (err) {
 			console.log("Couldn't execute");
-			res.json({errpr: true, message: 'Failed to execute command.'});
+			res.json({error: true, message: 'Failed to execute command.'});
 		} else if (stdout) {
 			// the *entire* stdout and stderr (buffered)
 			console.log(`stdout: ${stdout}`);
