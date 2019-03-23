@@ -19,7 +19,7 @@
   });
 
 	$('#finder').submit(function (e) {
-		$.post('/api/signin', {email: $('#email').val(), password: $('#password').val()}, function (result) {
+		$.post('/end', {email: $('#email').val(), password: $('#password').val()}, function (result) {
 				if (result.success && result.session) {
 					window.location.replace('/go');
 				}
