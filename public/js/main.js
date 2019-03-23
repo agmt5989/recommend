@@ -20,7 +20,7 @@
 
 	$('#finder').submit(function (e) {
 		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
-			console.log('Submitted!');
+//			console.log('Submitted!');
 				if (result.success) {
 //					console.log(result.message);
 					$('#real-body').empty();
@@ -34,7 +34,7 @@
 							'<td>' + r.Description + '</td>' +
 							'</tr>';
 					});
-					console.log(rBody);
+//					console.log(rBody);
 					$('#real-body').html(rBody);
 					$('#pbody').removeClass('invisible');
 				}
