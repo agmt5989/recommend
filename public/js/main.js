@@ -19,7 +19,7 @@
   });
 
 	$('#finder').submit(function (e) {
-		$.post('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
+		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
 			console.log('Submitted!');
 				if (result.success) {
 					console.log(result.message);
