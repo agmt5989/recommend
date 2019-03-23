@@ -25,7 +25,11 @@
 					console.log(result.message);
 					$('#real-body').empty();
 					let rBody = '';
-					result.message.for();
+					result.message.forEach((r) => {
+						rBody += '<tr>' +
+							'<td></td>' +
+							'</tr>'
+					});
 				}
 			}
 		);
