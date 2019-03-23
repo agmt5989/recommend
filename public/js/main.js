@@ -22,11 +22,12 @@
 		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
 			console.log('Submitted!');
 				if (result.success) {
-					console.log(result.message);
+//					console.log(result.message);
 					$('#real-body').empty();
 					let rBody = '';
 					let rI = 0;
 					result.message.real.forEach((r) => {
+						console.log(r);
 						rBody += '<tr>' +
 							'<td>' + ++rI + '</td>' + '' +
 							'<td>' + r.StockCode + '</td>' +
