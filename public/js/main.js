@@ -21,9 +21,9 @@
 	$('#finder').submit(function (e) {
 		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
 //			console.log('Submitted!');
-				while (!result) {
+				/*while (!result) {
 					$(#pbody).text('Loading . . .');
-				}
+				}*/
 				if (result.success) {
 //					console.log(result.message);
 					$('#real-body').empty();
