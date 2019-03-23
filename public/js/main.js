@@ -44,8 +44,8 @@
 						recoBody += '<tr>' +
 							'<td>' + ++recoI + '</td>' + '' +
 							'<td>' + r.StockCode + '</td>' +
-							'<td>' + r.Score + '</td>' +
-							'<td>' + r.Rank + '</td>' +
+							'<td>' + r.score + '</td>' +
+							'<td>' + r.rank + '</td>' +
 							'<td>' + r.Description + '</td>' +
 							'</tr>';
 					});
