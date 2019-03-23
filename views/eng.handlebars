@@ -106,11 +106,10 @@
                             <thead>
                             <tr>
                               <th class="text-center">S/N</th>
-                              <th>Title</th>
-                              <th>Name</th>
-                              <th>Initials</th>
-                              <th>Email</th>
-                              <th>Phone</th>
+                              <th>Code</th>
+                              <th>Description</th>
+                              {{!--<th>Email</th>--}}
+                              {{!--<th>Phone</th>--}}
                             </tr>
                             </thead>
                             <tbody>
@@ -119,9 +118,9 @@
                                 <td>{{inc @index}}</td>
                                 <td>{{sentence designation}}</td>
                                 <td>{{fullname}}</td>
-                                <td>{{initials}}</td>
-                                <td>{{{replace email ',' '<br>'}}}</td>
-                                <td>{{{replace phone ',' '<br>'}}}</td>
+                                {{!--<td>{{initials}}</td>--}}
+                                {{!--<td>{{{replace email ',' '<br>'}}}</td>--}}
+                                {{!--<td>{{{replace phone ',' '<br>'}}}</td>--}}
                               </tr>
                             {{/each}}
                             </tbody>
