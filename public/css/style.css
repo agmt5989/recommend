@@ -119,6 +119,10 @@ a:hover {
   vertical-align: middle;
 }
 
+#no-data > tr > td {
+    cursor: pointer;
+}
+
 /*--/ Sections /--*/
 
 .sect-4 {
