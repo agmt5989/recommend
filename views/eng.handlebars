@@ -95,10 +95,44 @@
                 </div>
                 <div class="widget-sidebar">
                     <h5 class="sidebar-title">Results</h5>
-                    <div class="sidebar-content">
-                      <div class="box invisible" id="pbody">
+                    <div class="sidebar-content invisible" id="pbody">
+                      <div class="box">
                         <div class="box-header">
-                          <h3 class="box-title">Real</h3>
+                          <h3 class="box-title">History</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                          <table id="users" class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                              <th class="text-center">S/N</th>
+                              <th class="text-center">Code</th>
+                              <th class="text-center">Description</th>
+                              {{!--<th>Email</th>--}}
+                              {{!--<th>Phone</th>--}}
+                            </tr>
+                            </thead>
+                            <tbody id="real-body">
+                            {{# each everyone}}
+                              <tr class='click-row' data-href='/admin/user/{{_id}}'>
+                                <td>{{inc @index}}</td>
+                                <td>{{sentence designation}}</td>
+                                <td>{{fullname}}</td>
+                                {{!--<td>{{initials}}</td>--}}
+                                {{!--<td>{{{replace email ',' '<br>'}}}</td>--}}
+                                {{!--<td>{{{replace phone ',' '<br>'}}}</td>--}}
+                              </tr>
+                            {{/each}}
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.box-body -->
+                      </div>
+                      <!-- /.box -->
+
+                      <div class="box">
+                        <div class="box-header">
+                          <h3 class="box-title">Recommendations</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
