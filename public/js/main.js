@@ -25,7 +25,7 @@
 	  'ordering': true,
 	  'info': true,
 	  'autoWidth': true,
-	  'pageLength': 50,
+	  'pageLength': 10,
   });
 
 	$('#finder').submit(function (e) {
