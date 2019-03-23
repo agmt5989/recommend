@@ -96,23 +96,40 @@
                 <div class="widget-sidebar">
                     <h5 class="sidebar-title">Results</h5>
                     <div class="sidebar-content">
-                        <ul class="list-sidebar">
-                            <li>
-                                <a href="#">Atque placeat maiores.</a>
-                            </li>
-                            <li>
-                                <a href="#">Lorem ipsum dolor sit amet consectetur</a>
-                            </li>
-                            <li>
-                                <a href="#">Nam quo autem exercitationem.</a>
-                            </li>
-                            <li>
-                                <a href="#">Atque placeat maiores nam quo autem</a>
-                            </li>
-                            <li>
-                                <a href="#">Nam quo autem exercitationem.</a>
-                            </li>
-                        </ul>
+                      <div class="box">
+                        <div class="box-header">
+                          <h3 class="box-title">All Senate Members</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                          <table id="users" class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                              <th class="text-center">S/N</th>
+                              <th>Title</th>
+                              <th>Name</th>
+                              <th>Initials</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{# each everyone}}
+                              <tr class='click-row' data-href='/admin/user/{{_id}}'>
+                                <td>{{inc @index}}</td>
+                                <td>{{sentence designation}}</td>
+                                <td>{{fullname}}</td>
+                                <td>{{initials}}</td>
+                                <td>{{{replace email ',' '<br>'}}}</td>
+                                <td>{{{replace phone ',' '<br>'}}}</td>
+                              </tr>
+                            {{/each}}
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.box-body -->
+                      </div>
+                      <!-- /.box -->
                     </div>
                 </div>
                 <div class="widget-sidebar">
