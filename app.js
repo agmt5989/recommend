@@ -54,7 +54,7 @@ app.get('/reco', (req, res) => {
 });
 
 app.get('/end', (req, res) => {
-	exec('python project.py ' + req.body.id + ' ' + req.body.no, (err, stdout, stderr) => {
+	exec('python project.py ' + req.query.id + ' ' + req.query.no, (err, stdout, stderr) => {
 		if (err) {
 			console.log("Couldn't execute");
 			res.json({success: false, error: true, message: 'Failed to execute command.'});
