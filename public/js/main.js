@@ -2,7 +2,7 @@
 	"use strict";
 	var nav = $('nav');
   var navHeight = nav.outerHeight();
-  
+
   $('.navbar-toggler').on('click', function() {
     if( ! $('#mainNav').hasClass('navbar-reduce')) {
       $('#mainNav').addClass('navbar-reduce');
@@ -17,6 +17,16 @@
       });
     }
   });
+
+	$('#finder').submit(function (e) {
+		$.post('/api/signin', {email: $('#email').val(), password: $('#password').val()}, function (result) {
+				if (result.success && result.session) {
+					window.location.replace('/go');
+				}
+			}
+		);
+		e.preventDefault();
+	});
 
   // Back to top button
   $(window).scroll(function() {
@@ -73,7 +83,7 @@
 	/*--/ Navbar Menu Reduce /--*/
 	$(window).trigger('scroll');
 	$(window).on('scroll', function () {
-		var pixels = 50; 
+		var pixels = 50;
 		var top = 1200;
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');
