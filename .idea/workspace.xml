@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="342" column="43" lean-forward="true" selection-start-line="342" selection-start-column="43" selection-end-line="342" selection-end-column="43" />
+            <state relative-caret-position="308">
+              <caret line="217" column="73" selection-start-line="217" selection-start-column="73" selection-end-line="217" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -99,6 +99,8 @@
       <find>jq</find>
       <find>bootst</find>
       <find>tags</find>
+      <find>cura</find>
+      <find>lorem</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,12 +210,12 @@
       <workItem from="1550512064301" duration="3342000" />
       <workItem from="1551516785194" duration="28439000" />
       <workItem from="1553170916010" duration="1958000" />
-      <workItem from="1553337002411" duration="12972000" />
+      <workItem from="1553337002411" duration="13224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46755000" />
+    <option name="totallyTimeSpent" value="47007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -300,8 +302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="342" column="43" lean-forward="true" selection-start-line="342" selection-start-column="43" selection-end-line="342" selection-end-column="43" />
+        <state relative-caret-position="308">
+          <caret line="217" column="73" selection-start-line="217" selection-start-column="73" selection-end-line="217" selection-end-column="73" />
         </state>
       </provider>
     </entry>
