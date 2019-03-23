@@ -19,7 +19,7 @@
   });
 
 	$('#finder').submit(function (e) {
-		$.post('/end', {id: $('#findid').val(), password: $('#password').val()}, function (result) {
+		$.post('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
 				if (result.success && result.session) {
 					window.location.replace('/go');
 				}
