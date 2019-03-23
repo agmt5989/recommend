@@ -20,6 +20,7 @@
 
 	$('#finder').submit(function (e) {
 		$.post('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
+			console.log('Submitted!');
 				if (result.success && result.session) {
 					window.location.replace('/go');
 				}
