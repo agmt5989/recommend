@@ -25,11 +25,15 @@
 					console.log(result.message);
 					$('#real-body').empty();
 					let rBody = '';
-					result.message.forEach((r) => {
+					let rI = 0;
+					result.message.real.forEach((r) => {
 						rBody += '<tr>' +
-							'<td></td>' +
-							'</tr>'
+							'<td>' + ++rI + '</td>' + '' +
+							'<td>' + r.StockCode + '</td>' +
+							'<td>' + r.Description + '</td>' +
+							'</tr>';
 					});
+					$('#real-body').html(rBody).removeClass('invisible');
 				}
 			}
 		);
