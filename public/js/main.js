@@ -52,7 +52,7 @@
 //					console.log(rBody);
 					$('#real-body').html(realBody);
 					$('#reco-body').html(recoBody);
-					$('table').DataTable({
+					$('table[id!="no-data"]').DataTable({
 						'paging': true,
 						'lengthChange': true,
 						'searching': true,
