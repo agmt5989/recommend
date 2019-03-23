@@ -118,7 +118,19 @@
 	  '14741',
 	  '13715',
 	  '17732'];
-  idArray.forEach((id) => {});
+  let idI = 0;
+  let tString = '';
+  idArray.forEach((id) => {
+  	if (idI % 5 === 0) {
+  		if (idI === 0) {
+  			tString += '<tr>'
+		  } else {
+  			tString += '</tr><tr>'
+		  }
+	  }
+  	tString += '<td>' + id + '</td>';
+  });
+  $('#no-data').html(tString);
 
 	$('#finder').submit(function (e) {
 		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
