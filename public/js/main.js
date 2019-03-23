@@ -118,6 +118,7 @@
 	  '14741',
 	  '13715',
 	  '17732'];
+  idArray.forEach((id) => {});
 
 	$('#finder').submit(function (e) {
 		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
