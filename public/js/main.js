@@ -23,6 +23,9 @@
 			console.log('Submitted!');
 				if (result.success) {
 					console.log(result.message);
+					$('#real-body').empty();
+					let rBody = '';
+					result.message.for();
 				}
 			}
 		);
