@@ -27,18 +27,30 @@
 				if (result.success) {
 //					console.log(result.message);
 					$('#real-body').empty();
-					let rBody = '';
-					let rI = 0;
+					$('#reco-body').empty();
+					let realBody = '';
+					let recoBody = '';
+					let realI = 0;
+					let recoI = 0;
 					result.message.real.forEach((r) => {
 //						console.log(r);
-						rBody += '<tr>' +
-							'<td>' + ++rI + '</td>' + '' +
+						realBody += '<tr>' +
+							'<td>' + ++realI + '</td>' + '' +
 							'<td>' + r.StockCode + '</td>' +
 							'<td>' + r.Description + '</td>' +
 							'</tr>';
 					});
+					result.message.reco.forEach((r) => {
+						recoBody += '<tr>' +
+							'<td>' + ++recoI + '</td>' + '' +
+							'<td>' + r.StockCode + '</td>' +
+							'<td>' + r.Score + '</td>' +
+							'<td>' + r.Rank + '</td>' +
+							'<td>' + r.Description + '</td>' +
+							'</tr>';
+					});
 //					console.log(rBody);
-					$('#real-body').html(rBody);
+					$('#real-body').html(realBody);
 					$('#pbody').removeClass('invisible');
 				}
 			}
