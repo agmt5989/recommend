@@ -121,7 +121,7 @@
   let idI = 0;
   let tString = '';
   idArray.forEach((id) => {
-  	if (idI % 5 === 0) {
+  	if (idI % 10 === 0) {
   		if (idI === 0) {
   			tString += '<tr>'
 		  } else {
