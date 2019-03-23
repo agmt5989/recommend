@@ -51,6 +51,7 @@
 					});
 //					console.log(rBody);
 					$('#real-body').html(realBody);
+					$('#reco-body').html(recoBody);
 					$('#pbody').removeClass('invisible');
 				}
 			}
