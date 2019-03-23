@@ -18,16 +18,6 @@
     }
   });
 
-  $('table').DataTable({
-	  'paging': true,
-	  'lengthChange': true,
-	  'searching': true,
-	  'ordering': true,
-	  'info': true,
-	  'autoWidth': true,
-	  'pageLength': 10,
-  });
-
 	$('#finder').submit(function (e) {
 		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
 //			console.log('Submitted!');
@@ -62,6 +52,15 @@
 //					console.log(rBody);
 					$('#real-body').html(realBody);
 					$('#reco-body').html(recoBody);
+					$('table').DataTable({
+						'paging': true,
+						'lengthChange': true,
+						'searching': true,
+						'ordering': true,
+						'info': true,
+						'autoWidth': true,
+						'pageLength': 10,
+					});
 					$('#pbody').removeClass('invisible');
 				}
 			}
