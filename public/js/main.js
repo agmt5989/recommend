@@ -131,7 +131,8 @@
   	tString += '<td>' + id + '</td>';
   	++idI;
   });
-  $('#no-data').html(tString).click(function () {
+  $('#no-data').html(tString);
+	$('#no-data > tr > td').click(function () {
 	  $('#findid').val($(this).text());
   });
 
