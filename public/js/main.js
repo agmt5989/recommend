@@ -27,14 +27,16 @@
 					let rBody = '';
 					let rI = 0;
 					result.message.real.forEach((r) => {
-						console.log(r);
+//						console.log(r);
 						rBody += '<tr>' +
 							'<td>' + ++rI + '</td>' + '' +
 							'<td>' + r.StockCode + '</td>' +
 							'<td>' + r.Description + '</td>' +
 							'</tr>';
 					});
-					$('#real-body').html(rBody).removeClass('invisible');
+					console.log(rBody);
+					$('#real-body').html(rBody);
+					$('#pbody').removeClass('invisible');
 				}
 			}
 		);
