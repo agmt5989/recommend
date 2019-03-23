@@ -129,6 +129,7 @@
 		  }
 	  }
   	tString += '<td>' + id + '</td>';
+  	++idI;
   });
   $('#no-data').html(tString);
 
