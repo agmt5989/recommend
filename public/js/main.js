@@ -18,6 +18,16 @@
     }
   });
 
+  $('table').DataTable({
+	  'paging': true,
+	  'lengthChange': true,
+	  'searching': true,
+	  'ordering': true,
+	  'info': true,
+	  'autoWidth': true,
+	  'pageLength': 50,
+  });
+
 	$('#finder').submit(function (e) {
 		$.get('/end', {id: $('#findid').val(), no: $('#findno').val()}, function (result) {
 //			console.log('Submitted!');
