@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47faa07f-0293-4b9f-aeb3-313e7713c931" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/views/eng.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/eng.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.dorcas.docx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reco.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/reco.handlebars" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,17 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="234">
+              <caret line="163" column="32" lean-forward="true" selection-end-line="636" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/eng.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+            <state relative-caret-position="262">
+              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -83,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/reco.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="227" selection-start-line="227" selection-end-line="227" />
+            <state relative-caret-position="816">
+              <caret line="635" column="7" selection-start-line="635" selection-start-column="7" selection-end-line="635" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -110,6 +111,8 @@
       <find>lorem</find>
       <find>submi</find>
       <find>submit</find>
+      <find>sear</find>
+      <find>work</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,10 +126,10 @@
         <option value="$PROJECT_DIR$/project.py" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/views/reco.handlebars" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.handlebars" />
         <option value="$PROJECT_DIR$/views/eng.handlebars" />
+        <option value="$PROJECT_DIR$/views/reco.handlebars" />
       </list>
     </option>
   </component>
@@ -228,12 +231,12 @@
       <workItem from="1553170916010" duration="1958000" />
       <workItem from="1553337002411" duration="17739000" />
       <workItem from="1553455396873" duration="661000" />
-      <workItem from="1553629877165" duration="810000" />
+      <workItem from="1553629877165" duration="1572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52993000" />
+    <option name="totallyTimeSpent" value="53755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -307,24 +310,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/reco.handlebars">
+    <entry file="file://$PROJECT_DIR$/views/eng.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        <state relative-caret-position="262">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+        <state relative-caret-position="234">
+          <caret line="163" column="32" lean-forward="true" selection-end-line="636" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/eng.handlebars">
+    <entry file="file://$PROJECT_DIR$/views/reco.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+        <state relative-caret-position="816">
+          <caret line="635" column="7" selection-start-line="635" selection-start-column="7" selection-end-line="635" selection-end-column="7" />
         </state>
       </provider>
     </entry>
