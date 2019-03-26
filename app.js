@@ -49,7 +49,7 @@ app.get('/start', (req, res) => {
 	});
 });
 
-app.get('/reco', (req, res) => {
+app.get('/results', (req, res) => {
 	res.render('reco');
 });
 
